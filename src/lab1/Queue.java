@@ -2,6 +2,7 @@ package lab1;
 
 import java.util.Scanner;
 
+//ganzo agaa
 public class Queue {
 	private ListNode front;
 	private ListNode rear;
