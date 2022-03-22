@@ -90,6 +90,5 @@ public class Queue {
 		} catch (Exception ex) {
 			System.out.println("Turliin utga buhel too baih ystoig anhaarna uu!!!");
 		}
-
 	}
 }
