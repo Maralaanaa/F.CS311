@@ -80,7 +80,11 @@ public class Queue {
 	}
 
 	static boolean isEmpty() {
-		return capacity == 0;
+		if (rear == 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	static int size() {
