@@ -1,4 +1,4 @@
-package example;
+package Laboratory2;
 
 public class Queue {
 
