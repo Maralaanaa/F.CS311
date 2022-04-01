@@ -4,7 +4,7 @@ public class main {
 
 	public static void main(String[] args) {
 		// Create a queue of capacity 4
-		Queue q = new Queue(4);
+		Queue q = new Queue(5);
 
 		// print Queue elements
 		q.queueDisplay();
@@ -14,6 +14,7 @@ public class main {
 		q.queueEnqueue(30);
 		q.queueEnqueue(40);
 		q.queueEnqueue(50);
+		q.queueEnqueue(60);
 
 		// print Queue elements
 		q.queueDisplay();

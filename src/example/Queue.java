@@ -1,20 +1,20 @@
 package example;
 
-public class Queue {
+public class Queue <G> {
 
-	 private static int front, rear, capacity;
-	    private static int queue[];
+	    private G front, rear, capacity;
+	    private G queue[];
 	 
-	    Queue(int c)
+	    Queue(G c)
 	    {
-	        front = rear = 0;
+	        front = rear = null;
 	        capacity = c;
-	        queue = new int[capacity];
+	        queue =new G[capacity];
 	    }
 	 
 	    // function to insert an element
 	    // at the rear of the queue
-	    static void queueEnqueue(int data)
+	    void queueEnqueue(G data)
 	    {
 	        // check queue is full or not
 	        if (capacity == rear) {
