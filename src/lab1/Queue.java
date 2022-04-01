@@ -2,7 +2,6 @@ package lab1;
 
 import java.util.Scanner;
 
-//ganzo agaa
 public class Queue {
 	private ListNode front;
 	private ListNode rear;
@@ -69,6 +68,13 @@ public class Queue {
 			current = current.next;
 		}
 		System.out.println("null");
+	}
+	public void delete() {
+		if(isEmpty()) {
+			return;
+		} else {
+			
+		}
 	}
 
 	public static void main(String[] args) {
