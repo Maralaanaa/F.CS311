@@ -2,17 +2,17 @@ package example;
 
 public class Queue <G> {
 
-	    private G front, rear, capacity;
-	    private G queue[];
-	 
-	    Queue(G c)
+	    public static int front, rear, capacity;
+	    public static String[] queue;
+	    
+	    public Queue(int c)
 	    {
-	        front = rear = null;
+	        front = rear = 0;
 	        capacity = c;
-	        queue =new G[capacity];
+	        queue = new String[capacity];
 	    }
-	 
-	    // function to insert an element
+
+		// function to insert an element
 	    // at the rear of the queue
 	    void queueEnqueue(G data)
 	    {
@@ -24,7 +24,7 @@ public class Queue <G> {
 	 
 	        // insert element at the rear
 	        else {
-	            queue[rear] = data;
+	            queue[rear] = (String) data;
 	            rear++;
 	        }
 	        return;
@@ -49,7 +49,7 @@ public class Queue <G> {
 	 
 	            // store 0 at rear indicating there's no element
 	            if (rear < capacity)
-	                queue[rear] = 0;
+	                queue[rear] = null;
 	 
 	            // decrement rear
 	            rear--;
@@ -68,7 +68,7 @@ public class Queue <G> {
 	 
 	        // traverse front to rear and print elements
 	        for (i = front; i < rear; i++) {
-	            System.out.printf(" %d <-- ", queue[i]);
+	            System.out.printf(" %s <-- ", queue[i]);
 	        }
 	        return;
 	    }
@@ -80,11 +80,19 @@ public class Queue <G> {
 	            System.out.printf("\nQueue is Empty\n");
 	            return;
 	        }
-	        System.out.printf("\nFront Element is: %d", queue[front]);
+	        System.out.printf("\nFront Element is: %s", queue[front]);
 	        return;
 	    }
+	    static boolean isEmpty() {
+			if (rear == 0) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		static int size() {
+			return capacity;
+		}
 	}
 	 
-	 
-	    
-
