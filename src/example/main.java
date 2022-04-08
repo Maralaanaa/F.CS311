@@ -14,7 +14,7 @@ public class main {
 			int dt = 0;
 			System.out.println("1.Hooson esehiig shalgah\n2.Daraalliin urtiig oloh"
 					+ "\n3.Daraalald utga nemeh\n4.Daraalliin utguudiig hevleh"
-					+ "\n5.Daraalald utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \\n\\nComanduudaas songoj oruulna uu!!!");
+					+ "\n5.Daraallaas utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \n\nCommanduudaas songoj oruulna uu!!!");
 			System.out.println("Ta commandaa oruulna uu");
 
 			ch = sc.nextInt();
@@ -34,7 +34,7 @@ public class main {
 					break;
 				case 3:
 					for (int i = 1; i <= q.size(); i++) {
-						System.out.println(i + "deh utgiig oruulna uu");
+						System.out.println(i + " deh utgiig oruulna uu");
 						dt = sc.nextInt();
 						q.queueEnqueue(dt);
 					}
@@ -55,12 +55,11 @@ public class main {
 					break;
 				case 6:
 					q.queueFront();
-					System.out.println("Daraalliin hamgiin urd taliin utgiig haruullaa.");
 					break;
 				default:
 					System.out.println("1-4 iin hoorond comand oruulna uu!");
 				}
-				System.out.print("\nComand :");
+				System.out.print("\nSongolt :");
 				ch = sc.nextInt();
 			}
 

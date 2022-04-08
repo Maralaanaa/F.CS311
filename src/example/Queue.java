@@ -75,7 +75,7 @@ public class Queue {
 			System.out.printf("\nQueue is Empty\n");
 			return;
 		}
-		System.out.printf("\nFront Element is: %d", queue[front]);
+		System.out.printf("\nDaraalliin hamgiin urd taliin utga: %d", queue[front]);
 		return;
 	}
 
