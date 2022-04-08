@@ -38,7 +38,7 @@ public class RunningHolidayLights implements HolidayLights {
 		for (int i = 1; i <= len; i++) {
 			ColoredLight light = new ColoredLight(c);
 			light.randomChange();
-			light.setOn(false);
+//			light.setOn(false);
 			list.add(light);
 		}
 		list.get(count).setOn(true);
