@@ -11,15 +11,15 @@ public class main {
 			System.out.println("Daraalliin hemjeeg oruulna uu: ");
 			int z = sc.nextInt();
 			Queue q = new Queue(z);
-			int dt = 0;
+			String dt = null;
 			System.out.println("1.Hooson esehiig shalgah\n2.Daraalliin urtiig oloh"
 					+ "\n3.Daraalald utga nemeh\n4.Daraalliin utguudiig hevleh"
-					+ "\n5.Daraallaas utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \n\nCommanduudaas songoj oruulna uu!!!");
-			System.out.println("Ta commandaa oruulna uu");
 
+					+ "\n5.Daraallaas utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \n\nCommanduudaas songoj oruulna uu!!!"
+					+ "\n5.Daraalald utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \nComanduudaas songoj oruulna uu!!!");
+			System.out.println("Ta commandaa oruulna uu");
 			ch = sc.nextInt();
 			while (ch != 0) {
-
 				switch (ch) {
 				case 1:
 					if (q.isEmpty()) {
@@ -35,7 +35,9 @@ public class main {
 				case 3:
 					for (int i = 1; i <= q.size(); i++) {
 						System.out.println(i + " deh utgiig oruulna uu");
-						dt = sc.nextInt();
+						dt = sc.next();
+						System.out.println(i + "deh utgiig oruulna uu");
+						dt = sc.next();
 						q.queueEnqueue(dt);
 					}
 					System.out.println("Daraalald oruulsan utguud amjilttai nemegdlee.");
@@ -55,9 +57,12 @@ public class main {
 					break;
 				case 6:
 					q.queueFront();
+
+					System.out.println("\nDaraalliin hamgiin urd taliin utgiig haruullaa.");
+
 					break;
 				default:
-					System.out.println("1-4 iin hoorond comand oruulna uu!");
+					System.out.println("comand:3");
 				}
 				System.out.print("\nSongolt :");
 				ch = sc.nextInt();

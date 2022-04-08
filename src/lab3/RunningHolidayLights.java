@@ -14,14 +14,6 @@ public class RunningHolidayLights implements HolidayLights {
 	int len;
 	int count = 0;
 
-//	public  void Random() {
-//		RandomGenerator rand = new RandomGenerator();
-//		float r = rand.nextFloat();
-//	    float g = rand.nextFloat();
-//	    float b = rand.nextFloat();
-//	    Color randomColor = new Color(r, g, b);
-//	}
-//	
 	public RunningHolidayLights(int length) {
 		// TODO
 		len = length;
@@ -31,7 +23,7 @@ public class RunningHolidayLights implements HolidayLights {
 	}
 
 	public List<Light> next() {
-		// TODO
+		// TODO 
 
 		List<Light> list = new ArrayList<Light>();
 		Color c = Color.pink;
