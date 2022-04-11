@@ -1,4 +1,4 @@
-package example;
+package lab2q;
 
 import java.util.Scanner;
 
@@ -12,11 +12,7 @@ public class main {
 			int z = sc.nextInt();
 			Queue q = new Queue(z);
 			String dt = null;
-			System.out.println("1.Hooson esehiig shalgah\n2.Daraalliin urtiig oloh"
-					+ "\n3.Daraalald utga nemeh\n4.Daraalliin utguudiig hevleh"
-
-					+ "\n5.Daraallaas utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \n\nCommanduudaas songoj oruulna uu!!!"
-					+ "\n5.Daraalald utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \nComanduudaas songoj oruulna uu!!!");
+			System.out.println("1.Hooson esehiig shalgah\n2.Daraalliin urtiig oloh\n3.Daraalald utga nemeh\n4.Daraalliin utguudiig hevleh\n5.Daraallaas utga hasah\n6.Daraalliin hamgiin urd taliin utgiig hevleh \nCommanduudaas songoj oruulna uu!!!");
 			System.out.println("Ta commandaa oruulna uu");
 			ch = sc.nextInt();
 			while (ch != 0) {
@@ -35,8 +31,6 @@ public class main {
 				case 3:
 					for (int i = 1; i <= q.size(); i++) {
 						System.out.println(i + " deh utgiig oruulna uu");
-						dt = sc.next();
-						System.out.println(i + "deh utgiig oruulna uu");
 						dt = sc.next();
 						q.queueEnqueue(dt);
 					}

@@ -31,7 +31,7 @@ public class HolidayLightsWindow extends JFrame {
 	
 	public HolidayLightsWindow(HolidayLights hl) {
 		// Sets up the title bar
-		super("Lab 0: Holiday Lights");
+		super("Lab 3: Holiday Lights");
 		
 		this.hl = hl;
 		this.setup();

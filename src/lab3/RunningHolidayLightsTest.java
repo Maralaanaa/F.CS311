@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-package lab3;
-
-public class RunningHolidayLightsTest {
-
-	public RunningHolidayLightsTest() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
-=======
 package lab3;
 
 import java.util.List;
@@ -57,4 +46,3 @@ public class RunningHolidayLightsTest {
 //		}	
 //	}
 }
->>>>>>> branch 'master' of https://github.com/Maralaanaa/F.CS311.git

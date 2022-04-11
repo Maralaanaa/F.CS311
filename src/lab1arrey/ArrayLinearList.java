@@ -1,4 +1,4 @@
-package lab1;
+package lab1arrey;
 
 public class ArrayLinearList {
 	public int size = 0;

@@ -1,4 +1,4 @@
-package lab1;
+package lab1arrey;
 
 import java.util.Scanner;
 
