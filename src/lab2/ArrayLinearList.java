@@ -2,6 +2,7 @@ package lab2;
 
 public class ArrayLinearList <G> {
 		public int size=0;
+		
 		public ArrayLinearList() {
 			
 		}

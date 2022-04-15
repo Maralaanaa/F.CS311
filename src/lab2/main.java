@@ -13,6 +13,7 @@ public class main {
 		j = scan.nextInt (); 
 		String [] arr = new String [j];
 		ArrayLinearList array = new ArrayLinearList();
+		
 		try {
 			  System.out.println("1.Hooson esehiig shalgah\n2.Jagsaaltiin urtiig oloh"
 			  		+ "\n3.Jagsaaltand utga nemeh\n4.Jagsaaltiin utguudiig hevleh"
