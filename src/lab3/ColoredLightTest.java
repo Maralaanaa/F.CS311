@@ -9,13 +9,9 @@ public class ColoredLightTest {
 
 	@Test
 	public void madeColor() {
-		
-		ColoredLight cl = new ColoredLight(null);
-		double k = cl.a;
-		double g = cl.b;
-		double t = cl.c;
-		
-		Assert.assertNotNull(Color.getHSBColor((float)k, (float)g, (float)t));
+		ColoredLight cl = new ColoredLight(Color.gray);
+
+		Assert.assertNotNull(cl.getColor());
 	}
 
 	@Test
@@ -43,35 +39,30 @@ public class ColoredLightTest {
 	@Test
 	public void testRandomChange() {
 		ColoredLight cl = new ColoredLight(null);
-		double k = cl.a;
-		double g = cl.b;
-		double t = cl.c;
 		// Call randomChange up to 100 times.
 		// Probabilistically, should turn on at some point.
 		boolean colorChanged = false;
 		for (int i = 0; i < 100; i++) {
 			cl.randomChange();
-			if (cl.getColor() == null) {
+			if (cl.getColor() != null) {
 				colorChanged = false;
 				break;
 			}
 		}
-		Assert.assertFalse(colorChanged);
-//		Assert.assertNotEquals(colorChanged, Color.getHSBColor((float)k, (float)g, (float)t));
+		Assert.assertEquals(colorChanged, Color.pink);
 
 		// Make sure it can change the other way
-		cl = new ColoredLight(Color.getHSBColor((float)k, (float)g, (float)t));
+		cl = new ColoredLight(Color.pink);
 		// Call randomChange up to 100 times.
 		// Probabilistically, should turn on at some point.
 		colorChanged = false;
 		for (int i = 0; i < 100; i++) {
 			cl.randomChange();
-			if (cl.getColor() != null) {
+			if (cl.getColor() == null) {
 				colorChanged = true;
 				break;
 			}
 		}
-		Assert.assertTrue(colorChanged);
-//		Assert.assertEquals(colorChanged, Color.getHSBColor((float)k, (float)g, (float)t));
+		Assert.assertEquals(colorChanged, Color.pink);
 	}
 }

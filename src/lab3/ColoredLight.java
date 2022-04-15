@@ -10,8 +10,7 @@ public class ColoredLight extends Light {
 	 * @param color - color of this light.
 	 */
 	Color cl;
-	double d, e, f;
-	double a, b, c;
+
 	public ColoredLight(Color color) {
 		// TODO
 		super(true);
@@ -46,25 +45,12 @@ public class ColoredLight extends Light {
 	public void randomChange() {
 		// TODO.
 		// Take advantage of Light.randomChange
-		
 		if (Math.random() < .2) {
-			a = Math.random();
-			b = Math.random();
-			c = Math.random();
-			d = a;
-			e = b;
-			f = c;
-			setColor(Color.getHSBColor((float)a, (float)b, (float)c));
+			setColor(Color.gray);
 		} else if (Math.random() > 0.2 && Math.random() < 0.4) {
-			a = Math.random();
-			b = Math.random();
-			c = Math.random();
-			setColor(Color.getHSBColor((float)a, (float)b, (float)c));
+			setColor(Color.black);
 		} else
-			a = Math.random();
-		    b = Math.random();
-		    c = Math.random();
-			setColor(Color.getHSBColor((float)a, (float)b, (float)c));
+			setColor(Color.pink);
 
 		// throw new RuntimeException("ColoredLight.randomChange() not yet
 		// implemented!");
