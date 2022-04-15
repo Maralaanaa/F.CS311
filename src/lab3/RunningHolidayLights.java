@@ -6,11 +6,6 @@ import java.util.List;
 
 public class RunningHolidayLights implements HolidayLights {
 
-	/**
-	 * Creates new running holiday lights.
-	 * 
-	 * @param length - length of this set of lights.
-	 */
 	int len;
 	int count = 0;
 

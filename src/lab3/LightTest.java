@@ -5,7 +5,6 @@ import org.junit.Test;
 
 public class LightTest {
 
-	// TODO Auto-generated constructor stub
 	@Test
 	public void makeOffLight() {
 		Light light = new Light();

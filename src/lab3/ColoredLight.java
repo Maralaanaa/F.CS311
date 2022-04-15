@@ -4,11 +4,6 @@ import java.awt.Color;
 
 public class ColoredLight extends Light {
 
-	/**
-	 * Creates a new colored light.
-	 * 
-	 * @param color - color of this light.
-	 */
 	Color cl;
 
 	public ColoredLight(Color color) {

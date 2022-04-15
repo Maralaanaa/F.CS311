@@ -18,11 +18,6 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.Timer;
 
-/**
- * JFrame that contains a display of holiday lights and an 'Exit' button.
- * @author uuu
- *
- */
 public class HolidayLightsWindow extends JFrame {
 	
 	private static final long serialVersionUID = -722257469624438083L;

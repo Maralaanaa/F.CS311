@@ -8,7 +8,6 @@ public class main {
 		int cmd, a;
 		int[] arr = new int[10];
 		ArrayLinearList array = new ArrayLinearList();
-
 		try {
 			System.out.println("1.Hooson esehiig shalgah\n2.Jagsaaltiin urtiig oloh"
 					+ "\n3.Jagsaaltand utga nemeh\n4.Jagsaaltiin utguudiig hevleh"

@@ -34,6 +34,7 @@ public class RunningHolidayLightsTest {
 			Assert.assertFalse(lig.get(i).isOn());
 		}
 	}
+	
 //	@Test
 //	public void CheckedCount() {
 //		List<Light> c;

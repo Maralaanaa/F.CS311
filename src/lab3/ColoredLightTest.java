@@ -49,6 +49,7 @@ public class ColoredLightTest {
 				break;
 			}
 		}
+		
 		Assert.assertEquals(colorChanged, Color.pink);
 
 		// Make sure it can change the other way

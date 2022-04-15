@@ -3,14 +3,13 @@ package lab1q;
 public class Queue {
 	    public static int front, rear, capacity;
 	    public static int[] queue;
-	    public Queue(int c)
-	    {
+	    
+	    public Queue(int c) {
 	        front = rear = 0;
 	        capacity = c;
 	        queue = new int[capacity];
 	    }
-	    void queueEnqueue(int data)
-	    {
+	    void queueEnqueue(int data) {
 	        if (capacity == rear) {
 	            System.out.printf("\nQueue is full\n");
 	            return;
@@ -21,8 +20,7 @@ public class Queue {
 	        }
 	        return;
 	    }
-	    static void queueDequeue()
-	    {
+	    static void queueDequeue() {
 	        // if queue is empty
 	        if (front == rear) {
 	            System.out.printf("\nQueue is empty\n");
@@ -38,8 +36,7 @@ public class Queue {
 	        }
 	        return;
 	    }
-	    static void queueDisplay()
-	    {
+	    static void queueDisplay() {
 	        int i;
 	        if (front == rear) {
 	            System.out.printf("\nQueue is Empty\n");
@@ -50,8 +47,7 @@ public class Queue {
 	        }
 	        return;
 	    }
-	    static void queueFront()
-	    {
+	    static void queueFront() {
 	        if (front == rear) {
 	            System.out.printf("\nQueue is Empty\n");
 	            return;

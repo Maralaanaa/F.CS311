@@ -1,6 +1,6 @@
 package lab1;
 
-public class ArrayLinearList {
+public class ArrayLinearList{
 	public int size = 0;
 
 	public ArrayLinearList() {

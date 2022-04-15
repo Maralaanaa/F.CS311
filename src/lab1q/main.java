@@ -6,6 +6,7 @@ public class main {
 
 	public static void main(String[] args) {
 		int ch;
+		
 		try {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Daraalliin hemjeeg oruulna uu: ");

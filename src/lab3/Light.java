@@ -1,9 +1,5 @@
 package lab3;
 
-/**
- * This is a simple light that can either be
- * on or off.
- */
 
 public class Light {
 	
