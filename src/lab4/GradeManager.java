@@ -45,36 +45,50 @@ public class GradeManager {
 //	}
 
 	public void addGrade(String grade) throws InvalidGradeException {
-		int q, e = 0, r = 0, t = 0, y = 0, u = 0;
-		if (Integer.parseInt(grade) <= 100 && Integer.parseInt(grade) >= 0) {
-			q = Integer.parseInt(grade);
+		try {
+			int q, e = 0, r = 0, t = 0, y = 0, u = 0;
+			if (Integer.parseInt(grade) <= 100 && Integer.parseInt(grade) >= 0) {
+				q = Integer.parseInt(grade);
 
-			if (90 < q && q <= 100) {
-				e = q;
-			} else if (80 < q && q <= 90) {
-				r = q;
-			} else if (70 < q && q <= 80) {
-				t = q;
-			} else if (60 < q && q <= 70) {
-				y = q;
-			} else {
-				u = q;
+				if (90 < q && q <= 100) {
+					e = q;
+				} else if (80 < q && q <= 90) {
+					r = q;
+				} else if (70 < q && q <= 80) {
+					t = q;
+				} else if (60 < q && q <= 70) {
+					y = q;
+				} else {
+					u = q;
+				}
 			}
-		} else {
-			grade = grade;
-		}
-		if (grade.equals("a") || grade.equals("A") || grade.equals(Integer.toString(e))) {
-			allGrades.put(LetterGrade.A, this.allGrades.get(LetterGrade.A) + 1);
-		} else if (grade.equals("b") || grade.equals("B") || grade.equals(Integer.toString(r))) {
-			allGrades.put(LetterGrade.B, this.allGrades.get(LetterGrade.B) + 1);
-		} else if (grade.equals("c") || grade.equals("C") || grade.equals(Integer.toString(t))) {
-			allGrades.put(LetterGrade.C, this.allGrades.get(LetterGrade.C) + 1);
-		} else if (grade.equals("d") || grade.equals("D") || grade.equals(Integer.toString(y))) {
-			allGrades.put(LetterGrade.D, this.allGrades.get(LetterGrade.D) + 1);
-		} else if (grade.equals("f") || grade.equals("F") || grade.equals(Integer.toString(u))) {
-			allGrades.put(LetterGrade.F, this.allGrades.get(LetterGrade.F) + 1);
-		} else {
-			throw new InvalidGradeException("Buruu orolt bn" + " " + grade);
+			if (grade.equals(Integer.toString(e))) {
+				allGrades.put(LetterGrade.A, this.allGrades.get(LetterGrade.A) + 1);
+			} else if (grade.equals(Integer.toString(r))) {
+				allGrades.put(LetterGrade.B, this.allGrades.get(LetterGrade.B) + 1);
+			} else if (grade.equals(Integer.toString(t))) {
+				allGrades.put(LetterGrade.C, this.allGrades.get(LetterGrade.C) + 1);
+			} else if (grade.equals(Integer.toString(y))) {
+				allGrades.put(LetterGrade.D, this.allGrades.get(LetterGrade.D) + 1);
+			} else if (grade.equals(Integer.toString(u))) {
+				allGrades.put(LetterGrade.F, this.allGrades.get(LetterGrade.F) + 1);
+			} else {
+				throw new InvalidGradeException("Buruu orolt bn" + " " + grade);
+			}
+		} catch (Exception e) {
+			if (grade.equals("a") || grade.equals("A")) {
+				allGrades.put(LetterGrade.A, this.allGrades.get(LetterGrade.A) + 1);
+			} else if (grade.equals("b") || grade.equals("B")) {
+				allGrades.put(LetterGrade.B, this.allGrades.get(LetterGrade.B) + 1);
+			} else if (grade.equals("c") || grade.equals("C")) {
+				allGrades.put(LetterGrade.C, this.allGrades.get(LetterGrade.C) + 1);
+			} else if (grade.equals("d") || grade.equals("D")) {
+				allGrades.put(LetterGrade.D, this.allGrades.get(LetterGrade.D) + 1);
+			} else if (grade.equals("f") || grade.equals("F")) {
+				allGrades.put(LetterGrade.F, this.allGrades.get(LetterGrade.F) + 1);
+			} else {
+				throw new InvalidGradeException("Buruu orolt bn" + " " + grade);
+			}
 		}
 
 //		if (grade.equals("a") || grade.equals("A")) {
@@ -91,6 +105,21 @@ public class GradeManager {
 //			throw new InvalidGradeException("Buruu orolt bn" + " " + grade);
 //		}
 		// If grade doesn't match a valid grade, throw an InvalidGradeException
+//		else {
+//			if (grade.equals("a") || grade.equals("A")) {
+//				allGrades.put(LetterGrade.A, this.allGrades.get(LetterGrade.A) + 1);
+//			} else if (grade.equals("b") || grade.equals("B")) {
+//				allGrades.put(LetterGrade.B, this.allGrades.get(LetterGrade.B) + 1);
+//			} else if (grade.equals("c") || grade.equals("C")) {
+//				allGrades.put(LetterGrade.C, this.allGrades.get(LetterGrade.C) + 1);
+//			} else if (grade.equals("d") || grade.equals("D")) {
+//				allGrades.put(LetterGrade.D, this.allGrades.get(LetterGrade.D) + 1);
+//			} else if (grade.equals("f") || grade.equals("F")) {
+//				allGrades.put(LetterGrade.F, this.allGrades.get(LetterGrade.F) + 1);
+//			} else {
+//				throw new InvalidGradeException("Buruu orolt bn" + " " + grade);
+//			}
+//		}
 	}
 
 	/**
@@ -156,7 +185,7 @@ public class GradeManager {
 				}
 			}
 		} catch (Exception ex) {
-			System.out.println(ex.getMessage());
+			System.out.println("h" + ex.getMessage());
 		}
 
 	}
