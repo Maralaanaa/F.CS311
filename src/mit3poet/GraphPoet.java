@@ -1,7 +1,7 @@
 /* Copyright (c) 2015-2016 MIT 6.005 course staff, all rights reserved.
  * Redistribution of original or derived work requires permission of course staff.
  */
-package poet;
+package mit3poet;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-import graph.Graph;
+import mit3graph.Graph;
 
 /**
  * A graph-based poetry generator.
