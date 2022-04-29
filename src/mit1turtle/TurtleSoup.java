@@ -33,7 +33,12 @@ public class TurtleSoup {
     	//turtle.forward(sideLength);
         //throw new RuntimeException("implement me!");
     }
-
+    public static void drawLine(Turtle turtle, int sideLength) {
+    	turtle.forward(sideLength);
+    }
+    public static void deleteLine(Turtle turtle, int sideLength) {
+    	turtle.forward(sideLength);
+    }
     /**
      * Determine inside angles of a regular polygon.
      * 
@@ -181,7 +186,35 @@ double angle;
      * @param turtle the turtle context
      */
     public static void drawPersonalArt(Turtle turtle) {
-        throw new RuntimeException("implement me!");
+//        throw new RuntimeException("implement me!");
+    	for(int i = 0; i <= 50; i++) {
+    		drawRegularPolygon(turtle, 6, i+10);
+    		turtle.turn(10);
+    	}
+//    	for(int i = 0; i <= 520; i++) {
+//    		if(i % 2 == 0) {
+//    			turtle.color(PenColor.PINK);
+//    		} else {
+//    			turtle.color(PenColor.BLACK);
+//    		}
+//		drawLine(turtle, i);
+//		turtle.turn(90);
+//	}
+//    	for(int i = 520; i >= 0; i--) {
+//    		turtle.color(PenColor.BLACK);
+//		deleteLine(turtle, i);
+//		turtle.turn(90);
+//	}
+//    	
+//    	for(int i = 0; i <= 300; i++) {
+//    		if(i % 2 == 0) {
+//    			turtle.color(PenColor.PINK);
+//    		} else {
+//    			turtle.color(PenColor.BLACK);
+//    		}
+//		drawLine(turtle, i);
+//		turtle.turn(110);
+//	}
     }
 
     /**
@@ -195,8 +228,9 @@ double angle;
         DrawableTurtle turtle = new DrawableTurtle();
 
         //drawSquare(turtle, 40);
-        
-        drawRegularPolygon(turtle, 8, 40);
+//        drawRegularPolygon(turtle, 6, 10);
+        drawPersonalArt(turtle);
+//        drawLine(turtle, 50);
         // draw the window
         turtle.draw();
     }

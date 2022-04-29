@@ -5,7 +5,7 @@ import java.awt.Color;
 public class ColoredLight extends Light {
 
 	Color cl;
-
+	double e, r, t;
 	public ColoredLight(Color color) {
 		// TODO
 		super(true);
@@ -41,12 +41,24 @@ public class ColoredLight extends Light {
 		// TODO.
 		// Take advantage of Light.randomChange
 		if (Math.random() < .2) {
-			setColor(Color.gray);
+			double a = Math.random();
+			double b = Math.random();
+			double c = Math.random();
+			e = a;
+			r = b;
+			t = c;
+			setColor(Color.getHSBColor((float) a, (float) b, (float) c));
 		} else if (Math.random() > 0.2 && Math.random() < 0.4) {
-			setColor(Color.black);
-		} else
-			setColor(Color.pink);
-
+			double a = Math.random();
+			double b = Math.random();
+			double c = Math.random();
+			setColor(Color.getHSBColor((float) a, (float) b, (float) c));
+		} else {
+			double a = Math.random();
+			double b = Math.random();
+			double c = Math.random();
+			setColor(Color.getHSBColor((float) a, (float) b, (float) c));
+		}
 		// throw new RuntimeException("ColoredLight.randomChange() not yet
 		// implemented!");
 	}
